@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>表格</title>
+    </head>
+    <body>
+        <table border="1"> <!-- table border =n 是調整表格的寬線高度-->
+            <tr><td>1</td><td>2</td><td>3</td></tr> <!--tr 定義表格每一行 -->
+            <tr><td>4</td><td>5</td><td>6</td></tr> <!--tr 定義表格每一行 -->
+        </table>
+
+        <table border="1"> <!-- table border =n 是調整表格的寬線高度-->
+            <tr><td>1</td><td colspan="2">2 3</td></tr> <!--td 定義表格的資料欄位--> <!--colspan是表格欄位的合併-->
+            <tr><td>4</td><td>5</td><td>6</td></tr> <!--td 定義表格的資料欄位-->
+        </table>
+
+        <table border="1"> <!-- table border =n 是調整表格的寬線高度-->
+            <tr><td rowspan="2">1 4</td><td>2</td><td>3</td></tr> <!--rowspan="2"意思是第一列要合併兩行， -->
+            <tr>            <td>5</td><td>6</td></tr>
+        </table>
+
+        <table border="1">
+            <tr><td>1</td><td>2</td><td>3</td></tr>
+            <tr><td>4</td><td rowspan="2" colspan="2">5 6 8 9</td></tr> <!--rowspan="2"意思是第一列要合併兩行， -->
+            <tr><td>7</td></tr>
+        </table>  <!-- table 產生表格的標籤-->
+
+    </body>
+</html>
