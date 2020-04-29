@@ -3,26 +3,26 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title></title>
+        <title></title>  <!--網頁主題<title>          </title>必須放在抬頭區段-->
     </head>
-    <body>
-        <form method="get" action="rebistration.php">
-            姓名:<input type="text" name="name"><br>
-            性別:<input type="radio" name="gender" value="M" checked >男
-                 <input type="radio" name="gender" value="F">女
-                 <input type="radio" name="gender" value="N">多元性別<br>
-            興趣:<input type="checkbox" name="interest" value="TV" checked >看電視
+    <body>                                               <!--<form action>設定戶動式表單的處理方式-->
+        <form method="get" action="rebistration.php">    <!--<form method>設定戶動式表單之資料傳送方式-->
+            姓名:<input type="text" name="name"><br>     <!--<input type name value>在表單中加入輸入欄位-->
+            性別:<input type="radio" name="gender" value="M" checked >男         <!--checked是表示預設值-->
+                 <input type="radio" name="gender" value="F">女                  <!--radio 會呈現表單選項按鈕-->
+                 <input type="radio" name="gender" value="N">多元性別<br> 
+            興趣:<input type="checkbox" name="interest" value="TV" checked >看電視  <!-- 會呈現表單核取方塊-->
                  <input type="checkbox" name="interest" value="Music">聽音樂
                  <input type="checkbox" name="interest" value="movie">看電影<br> 
-            居住地:<select name="county">
-                     <option value="hsinchu">新竹</option>
+            居住地:<select name="county">                   <!--<select>...</select>在表單中定義列表欄-->
+                     <option value="hsinchu">新竹</option>  <!--<option>定義表單中列表欄的項目-->
                      <option value="taoyuan"selected>桃園</option>
                      <option value="miaoli">苗栗</option> 
                     </select><br>
             自傳:<br>
-            <textarea name="autobiography" rows="5" cols="40"></textarea><br>
-            <input type="submit" value="註冊">
-            <input type="reset" value="清除">
+            <textarea name="autobiography" rows="5" cols="40"></textarea><br>  <!--<textarea name rows cols>表單中加入多少列的文字輸入欄-->
+            <input type="submit" value="註冊">   <!--有註冊和刪除的欄位-->
+            <input type="reset" value="清除"> 
         </form>
     </body>
 </html>
